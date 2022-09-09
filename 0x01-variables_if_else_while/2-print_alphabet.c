@@ -1,11 +1,12 @@
 #include <stdio.h>
-/*
+/**
  * main - Entry
  * Return: End the program
  */
 int main(void)
 {
 	char alpha = 'a';
+
 	while (alpha <= 'z')
 	{
 	       	putchar(alpha);
@@ -13,5 +14,4 @@ int main(void)
 	}
        	putchar('\n');
 	return (0);
-
 }
