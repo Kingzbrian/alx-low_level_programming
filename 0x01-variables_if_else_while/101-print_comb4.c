@@ -2,40 +2,34 @@
 #include <stdlib.h>
 /**
  * main -Start
- * Return: 0
+ * Return: end
  */
 int main(void)
 {
-	int a;
-
-	int b;
-
-	int c = 0;
-
-	while (c < 10)
+	int n1 = 48;
+	int n2, n3;
+	int com = 44;
+	while (n1 <= 57)
 	{
-		b = 0;
-		while (b < 10)
+		n2 = n1 + 1;
+		while (n2 <= 57)
 		{
-			c = 0;
-			while (c < 10)
+			n3 = n2 + 1;
+			while (n3 <= 57)
 			{
-				if (a != b && b != c && c < b && b < a)
+				putchar(n1);
+				putchar(n2);
+				putchar(n3);
+				if (n1 != 55 || n2 != 56 || n3 != 57)
 				{
-					putchar('0' + c);
-					putchar('0' + b);
-					putchar('0' + a);
-					if (a + b + c != 24)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(com);
+					putchar(32);
 				}
-				a++;
+				n3 += 1;
 			}
-			b++;
+			n2 += 1;
 		}
-		c++;
+		n1 += 1;
 	}
 	putchar('\n');
 	return (0);
