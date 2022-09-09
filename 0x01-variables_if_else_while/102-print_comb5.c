@@ -7,7 +7,6 @@
 int main(void)
 {
 	int n1 = 48;
-
 	int a = 0;	
 	int b;
 	int com = 44;
