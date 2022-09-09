@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main -Start
  * Return: 0
@@ -17,14 +18,14 @@ int main(void)
 		while (b < 10)
 		{
 			c = 0;
-			while (c <10)
+			while (c < 10)
 			{
 				if (a != b && b != c && c < b && b < a)
 				{
 					putchar('0' + c);
 					putchar('0' + b);
 					putchar('0' + a);
-					if (a + b + c != 9 + 8 + 7)
+					if (a + b + c != 24)
 					{
 						putchar(',');
 						putchar(' ');
