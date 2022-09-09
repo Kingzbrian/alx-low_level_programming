@@ -8,13 +8,12 @@ int main(void)
 	int a;
 
 	int b = 0;
-	
 	while (b < 10)
 	{
 		a = 0;
-		while (a <10)
+		while (a < 10)
 		{
-			if (b !=a && b < a)
+			if (b != a && b < a)
 			{
 				putchar('0' + b);
 				putchar('0' + a);
