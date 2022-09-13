@@ -6,7 +6,7 @@
 int main(void)
 {
 	long int a = 0, b = 1, d;
-	int c;
+	int c = 0;
 
 	for (c = 0; c < 50; c++)
 	{
@@ -19,6 +19,6 @@ int main(void)
 			printf(", ");
 		}
 	}
-	printf(" ");
+	putchar('\n');
 	return (0);
 }
