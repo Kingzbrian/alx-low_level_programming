@@ -5,19 +5,19 @@
  */
 int main(void)
 {
-	long int a = 0, b = 1, d, result;
-	int c;
+	int i = 0, j = 1, tt = 0;
+	int k;
 
-	for (c = 0; c < 4000000; c++)
+	while (j < 4000000)
 	{
-		d = a + b;
-		a = b;
-		b = d;
-		if (d % 2 == 0)
+		if (j % 2 == 0)
 		{
-			result += d;
+			tt += j;
 		}
+		k = j;
+		j += i;
+		i = k;
 	}
-	printf("%ld", result);
+	printf("%d\n", tt);
 	return (0);
 }
