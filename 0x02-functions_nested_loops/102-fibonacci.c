@@ -18,6 +18,10 @@ int main(void)
 		{
 			printf(", ");
 		}
+		if (c == 50)
+		{
+			printf(" ");
+		}
 	}
 	return (0);
 }
