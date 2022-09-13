@@ -7,7 +7,7 @@ int main(void)
 {
 	long int a = 0, b = 1, d;
 	int c;
-	
+
 	for (c = 0; c < 50; c++)
 	{
 		d = a + b;
