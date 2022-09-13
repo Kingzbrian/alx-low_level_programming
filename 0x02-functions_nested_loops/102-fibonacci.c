@@ -18,10 +18,7 @@ int main(void)
 		{
 			printf(", ");
 		}
-		if (c == 50)
-		{
-			printf(" ");
-		}
 	}
+	printf(" ");
 	return (0);
 }
