@@ -13,6 +13,7 @@ int main(void)
 		randpass = (rand() % 125) + 1;
 		printf("%c", randpass);
 		tt -= randpass;
+		count++;
 	}
 	printf("%c", tt);
 	return (0);
