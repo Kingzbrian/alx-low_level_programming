@@ -14,6 +14,6 @@ int main(void)
 		printf("%c", randpass);
 		tt -= randpass;
 	}
-	printf("%c", total);
+	printf("%c", tt);
 	return (0);
 }
