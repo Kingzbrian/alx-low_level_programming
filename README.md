@@ -1,1 +1,1 @@
-A start to programming
+Learning about pointers, arrays and strings
