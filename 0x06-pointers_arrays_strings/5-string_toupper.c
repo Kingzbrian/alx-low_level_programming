@@ -1,6 +1,6 @@
 #include "stdio.h"
 /**
- * string_toupper : changes all lowercase to uppercase
+ * string_toupper - changes all lowercase to uppercase
  * @z : pointer to string
  * Return: string in uppercase
  */
