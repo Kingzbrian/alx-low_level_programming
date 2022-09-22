@@ -1,20 +1,20 @@
 #include "stdio.h"
 /**
  * string_toupper - changes all lowercase to uppercase
- * @z : pointer to string
+ * @s : pointer to string
  * Return: string in uppercase
  */
-char *string_toupper(char *z)
+char *string_toupper(char *s)
 {
-	int i = 0;
+	int count = 0;
 
-	while (z[i] != '\0')
+	while (*(s + count) != '\0')
 	{
-		if (z[i] >= 97 && z[i] <= 122)
+		if ((*(s + count) >= 97) && (*(s + count) <= 122))
 		{
-			z[i] = z[i] - ' ';
+			*(s + count) = *(s + count) - 32;
 		}
-		i++;
+		count++;
 	}
-	return (z);
+	return (s);
 }
