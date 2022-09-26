@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _strspn : get length of prefixed substring
- * @s: pointer
+ * _strspn - get length of prefixed substring
+ * @s: poiner
  * @accept: source
+ * Return: k
  */
 unsigned int _strspn(char *s, char *accept)
 {
