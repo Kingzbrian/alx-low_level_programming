@@ -28,7 +28,7 @@ int comp(char *s, int n1, int n2)
 	return (0);
 }
 /**
- * is_palidrome - detect if a string is palidrome
+ * is_palindrome - detect if a string is palidrome
  * @s: string
  * Return: 1 or 0
  */
