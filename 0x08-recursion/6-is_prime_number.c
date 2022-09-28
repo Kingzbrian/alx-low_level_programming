@@ -3,6 +3,7 @@
  * divs - checks if no is divisible
  * @num: number
  * @div: divisor
+ * Return: if divisor
  */
 int divs(int num, int div)
 {
