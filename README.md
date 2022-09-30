@@ -1,1 +1,1 @@
-Learning c
+Introduction to c programming
