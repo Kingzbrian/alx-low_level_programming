@@ -6,7 +6,7 @@
  * @height: height
  * Return: no return
  */
-void free_grid(char **grid, unsigned int height)
+void ch_free_grid(char **grid, unsigned int height)
 {
 	if (grid != NULL && height != 0)
 	{
@@ -50,7 +50,7 @@ char **strtow(char *str)
 				cat[i] = malloc((c - a1 + 2) * sizeof(char));
 				if (cat[i] == NULL)
 				{
-					free_grid(aout, i);
+					ch_free_grid(cat, i);
 					return (NULL);
 				}
 				break;
