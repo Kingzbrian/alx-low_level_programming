@@ -1,14 +1,14 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * simple_print_buffer - function to return pointer to allocated mem
+ * _calloc - function to return pointer to allocated mem
  * @nmemb: no of elements
  * @size: no of bytes
  * Return: 0
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char * c;
+	char *c;
 	unsigned int i;
 
 	c = malloc(sizeof(int) * nmemb * size);
