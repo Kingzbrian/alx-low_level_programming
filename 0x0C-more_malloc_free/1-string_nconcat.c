@@ -5,20 +5,26 @@
  * @s1: string 1 pointer
  * @s2: string 2 pointer
  * @n: no of bytes
+ * Return: concatenated string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *a;
 	unsigned int x, n1 = 0, n2 = 0, i, j;
-
-	if (s1 == NULL)
+	if (s1 != NULL)
+	{
+		while (s1[n1] != 0)
+			n1++;
+	}
+	else
 		s1 = "";
-	if (s2 == NULL)
+	if (s2 != NULL)
+	{
+		while (s2[n2] != 0)
+			n2++;
+	}
+	else
 		s2 = "";
-	for (i = 0; s1[n1] != '\0'; n1++)
-		;
-	for (j = 0; s1[n2] != '\0'; n2++)
-		;
 	if (n < n2)
 		x = n;
 	else
