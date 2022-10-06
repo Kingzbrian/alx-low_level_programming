@@ -13,12 +13,27 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	c = malloc(sizeof(int) * nmemb * size);
+	c = malloc(sizeof(nmemb * size));
 	if (c == NULL)
 		return (NULL);
-	for (i = 0; i < (nmemb * size); i++)
-	{
-		c[i] = 0;
-	}
+	_memset(c, 0, nmemb * size);
 	return (c);
+}
+/**
+ * _memset - fills mem with a nstant byte
+ * @s: return mem
+ * @b: constant byte
+ * @n: size of bytes
+ * Return: character
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsugned int i = 0;
+
+	while (i < n)
+	{
+		s[i] = b;
+		i += 1;
+	}
+	return (s);
 }
