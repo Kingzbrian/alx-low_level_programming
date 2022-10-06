@@ -1,22 +1,22 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * simple_print_buffer - prints buffer
- * @buffer: the address
- * @size: the size
- * Return: null or pointer
+ * array_range - creates an array
+ * @min: minimum
+ * @max: maximum
+ * Return: pointer
  */
 int *array_range(int min, int max)
 {
-	int *c;
-	int j;
+	int *ar;
+	int i;
 
 	if (min > max)
 		return (NULL);
-	c = malloc(sizeof(int) * (min - max + 1);
-	if (c == NULL)
+	ar = malloc(sizeof(*ar) * ((max - min) + 1));
+	if (ar == NULL)
 		return (NULL);
 	for (i = 0; min <= max; i++, min++)
-		c[j] = min;
-	return (c);
+		ar[i] = min;
+	return (ar);
 }
