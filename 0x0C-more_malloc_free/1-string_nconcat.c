@@ -11,6 +11,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *a;
 	unsigned int x, n1 = 0, n2 = 0, i, j;
+
 	if (s1 != NULL)
 	{
 		while (s1[n1] != 0)
