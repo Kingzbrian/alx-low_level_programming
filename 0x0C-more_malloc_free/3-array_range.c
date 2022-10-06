@@ -8,7 +8,7 @@
  */
 int *array_range(int min, int max)
 {
-	char *c;
+	int *c;
 	int j;
 
 	if (min > max)
