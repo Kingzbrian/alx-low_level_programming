@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * print_list - fuction to print list
- * h: pointer to list to be printed
+ * @h: pointer to list to be printed
  * Return: no of nodes printed.
  */
 size_t print_list(const list_t *h)
@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("[%d]%s\n", h->len, h->str);
 		n++;
-		h = h-> next;
+		h = h->next;
 	}
-	return (node);
+	return (n);
 }
