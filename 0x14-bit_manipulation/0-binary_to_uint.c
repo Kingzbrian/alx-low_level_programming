@@ -6,8 +6,8 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int k;
-	int i = 0;
+	int k;
+	unsigned int i = 0, mult = 1;
 
 	if (!b)
 		return (0);
@@ -15,9 +15,10 @@ unsigned int binary_to_uint(const char *b)
 		k++;
 	for (k -= 1; k >= 0; k--)
 	{
-		if (if b[k] != '0' && b[k] != '1')
+		if (b[k] != '0' && b[k] != '1')
 			return (0);
-		i = (b[k] - '0') + 2 * i;
+		i += (b[k] - '0') * mult;
+		mult *= 2;
 	}
 	return (i);
 }
